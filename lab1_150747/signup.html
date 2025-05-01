@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('wall.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: rgb(255, 255, 255); /* Ensure text is readable */
+        }
+    </style>
+    <title>Driver Sign Up</title>
+    <style>
+        body {
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0); /* Optional: To ensure text is readable on a blue background */
+                font-weight: bold;
+            }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Driver Sign Up</h1>
+        <form action="/submit-signup" method="POST" enctype="multipart/form-data" style="display: inline-block; text-align: left;">
+            <label for="driverName">Driver Name:</label><br>
+            <input type="text" id="driverName" name="driverName" required style="background-color: transparent; border: 1px solid white; color: white;"><br><br>
+
+            <label for="numberPlate">Number Plate:</label><br>
+            <input type="text" id="numberPlate" name="numberPlate" required style="background-color: transparent; border: 1px solid white; color: white;"><br><br>
+
+            <label for="driversLicense">Upload Driver's License:</label><br>
+            <input type="file" id="driversLicense" name="driversLicense" accept="image/*" required style="background-color: transparent; border: 1px solid white; color: white;"><br><br>
+
+            <label for="rideImages">Upload Images of Your Ride:</label><br>
+            <input type="file" id="rideImages" name="rideImages" accept="image/*" multiple required style="background-color: transparent; border: 1px solid white; color: white;"><br><br>
+
+            <label for="sacco">Register for a Sacco:</label><br>
+            <input type="text" id="sacco" name="sacco" required style="background-color: transparent; border: 1px solid white; color: white;"><br><br>
+
+            <label for="routes">Register Routes to Be Used:</label><br>
+            <textarea id="routes" name="routes" rows="4" cols="50" placeholder="Enter routes separated by commas" required style="background-color: transparent; border: 1px solid white; color: white;"></textarea><br><br>
+
+            <button type="submit" style="background-color: transparent; border: 1px solid white; color: white;">Sign Up</button>
+        </form>
+    </div>
+    </form>
+</body>
+</html>
